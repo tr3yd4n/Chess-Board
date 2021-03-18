@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #chessBoard{
+                width: 500px;
+                height: 500px;
+                border: 5px solid purple;
+                margin: auto;
+                overflow: hidden;
+            }
+            .row{
+                border: 1px solid black;
+            }
+            .cell{
+                border: 1px solid green;
+                display: inline;
+                
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="chessBoard"></div>
+        <p><h1>"HELLO"<h1><p></p>
+        <script>
+            
+            let chessBoard = document.getElementById("chessBoard")
+            
+            function createBoard(num){
+                for (i =0; i < 64; i++){
+                    const cell = document.createElement("div")
+                    cell.classList.add('cell')
+                    cell.innerHTML = ("only works if im on")
+                    chessBoard.appendChild(cell)
+                if(i % 2 == 0){
+                    cell.style.backgroundColor = "orange"
+                }else{
+                    cell.style.backgroundColor = "brown"
+                }
+            }
+            }
+
+            window.onload=function(){
+                createBoard(8)
+          
+            }
+
+
+
+            
+        </script> 
+    </body>
+</html>
