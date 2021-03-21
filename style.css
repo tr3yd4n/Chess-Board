@@ -1,0 +1,19 @@
+#main-board {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+}
+
+td {
+  border: solid black;
+}
+
+tr {
+  border: solid black;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  border: 1px solid green;
+}
